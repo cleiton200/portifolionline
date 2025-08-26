@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
+  <meta charset="utf-8" />
   <title>Formação</title>
   <link rel="stylesheet" href="styles/formação.css">
 </head>
-
 <body>
   <nav id="menu">
     <ul>
@@ -15,121 +14,96 @@
       <li><a href="Contato.html">Contato</a></li>
     </ul>
   </nav>
-  <h1 text-align="center"> Escolaridade - Ensino fundamental </h1><br>
-  <div class="text"> <!-- tabela que mostra o ensino fundamental-->
-    <table text-align="center">
-      <tr>
-        <th>Ano/erie</th>
-        <th>Ano</th>
-        <th>Instituição</th>
-      </tr>
-      <tr>
-        <td>2/1</td>
-        <td>2007</td>
-        <td>Michel Khury, EM-EI EF</td>
-      </tr>
-      <tr>
-        <td>3/2</td>
-        <td>2008</td>
-        <td>Rachel Mader Gonçalves, EM-EI EF</td>
-      </tr>
-      <tr>
-        <td>4/3</td>
-        <td>2009</td>
-        <td>Rachel Mader Gonçalves, EM-EI EF</td>
-      </tr>
-      <tr>
-        <td>5/4</td>
-        <td>2010</td>
-        <td>Rachel Mader Gonçalves, EM-EI EF</td>
-      </tr>
-      <tr>
-        <td>6/5</td>
-        <td>2011</td>
-        <td>Alfredo Parodi, EM-EI EF</td>
-      </tr>
-      <tr>
-        <td>7/6</td>
-        <td>2012</td>
-        <td>Alfredo Parodi, EM-EI EF</td>
-      </tr>
-      <tr>
-        <td>8/7</td>
-        <td>2013</td>
-        <td>Alfredo Parodi, EM-EI EF</td>
-      </tr>
-      <tr>
-        <td>9/8</td>
-        <td>2014</td>
-        <td>Alfredo Parodi,EM-EI EF</td>
-      </tr>
-    </table>
-  </div>
 
-  <h1 text-align="center"> Escolaridade - Ensino Médio </h1><br>
-  <div class="text"> <!-- tabela que mostra o ensino Médio-->
-    <table>
-      <tr>
-        <th>Serie</th>
-        <th>Ano</th>
-        <th>Instituição</th>
-      </tr>
-      <tr>
-        <td>1°Serie</td>
-        <td>2015</td>
-        <td>Colégio SESC São josé - Ensino Médio</td>
-      </tr>
-      <tr>
-        <td>2°Serie</td>
-        <td>2016</td>
-        <td>Colégio SESC São josé - Ensino Médio</td>
-      </tr>
-      <tr>
-        <td>3°Serie</td>
-        <td>2015</td>
-        <td>Colégio SESC São josé - Ensino Médio</td>
-      </tr>
-    </table>
-  </div>
-  <h1 text-align="center"> Cursos complementares</h1><br>
-  <div class="text"> <!-- tabela que mostra os cursos complementares-->
-    <table>
-      <tr>
-        <th>Curso</th>
-        <th>Ano</th>
-        <th>Instituição</th>
-      </tr>
-      <tr>
-        <td>Assistente administrativo</td>
-        <td>2016</td>
-        <td>Senac</td>
-      </tr>
-      <tr>
-        <td>Operador de computador</td>
-        <td>2015</td>
-        <td>Senac</td>
-      </tr>
-      <tr>
-        <td>Algoritimos e logica de programação</td>
-        <td>2021</td>
-        <td>Udemy</td>
-      </tr>
-    </table>
-  </div>
+  <main class="container">
+    <!-- Ensino Fundamental -->
+    <section class="card">
+      <h1>Escolaridade – Ensino Fundamental</h1>
+      <div class="table-wrap">
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th scope="col">Ano/Série</th>
+              <th scope="col">Ano</th>
+              <th scope="col">Instituição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2/1</td><td>2007</td><td>Michel Khury, EM-EI EF</td></tr>
+            <tr><td>3/2</td><td>2008</td><td>Rachel Mader Gonçalves, EM-EI EF</td></tr>
+            <tr><td>4/3</td><td>2009</td><td>Rachel Mader Gonçalves, EM-EI EF</td></tr>
+            <tr><td>5/4</td><td>2010</td><td>Rachel Mader Gonçalves, EM-EI EF</td></tr>
+            <tr><td>6/5</td><td>2011</td><td>Alfredo Parodi, EM-EI EF</td></tr>
+            <tr><td>7/6</td><td>2012</td><td>Alfredo Parodi, EM-EI EF</td></tr>
+            <tr><td>8/7</td><td>2013</td><td>Alfredo Parodi, EM-EI EF</td></tr>
+            <tr><td>9/8</td><td>2014</td><td>Alfredo Parodi, EM-EI EF</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-  <h1 align="right"> Escolaridade - Faculdade </h1><br>
-  <div class="text"> <!-- tabela que mostra o Faculdade-->
-    <table>
-      <tr>
-        <th>Ano</th>
-        <th>Instituição</th>
-      </tr>
-      <tr></tr>
-      <td>cursando</td>
-      <td>Uninter</td>
-      </tr>
-    </table>
-  </div>
+    <!-- Ensino Médio -->
+    <section class="card">
+      <h1>Escolaridade – Ensino Médio</h1>
+      <div class="table-wrap">
+        <table class="tabela">
+          
+          <thead>
+            <tr>
+              <th scope="col">Série</th>
+              <th scope="col">Ano</th>
+              <th scope="col">Instituição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1° Série</td><td>2015</td><td>Colégio SESC São José – Ensino Médio</td></tr>
+            <tr><td>2° Série</td><td>2016</td><td>Colégio SESC São José – Ensino Médio</td></tr>
+            <tr><td>3° Série</td><td>2015</td><td>Colégio SESC São José – Ensino Médio</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Cursos Complementares -->
+    <section class="card">
+      <h1>Cursos complementares</h1>
+      <div class="table-wrap">
+        <table class="tabela">
+          
+          <thead>
+            <tr>
+              <th scope="col">Curso</th>
+              <th scope="col">Ano</th>
+              <th scope="col">Instituição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Assistente administrativo</td><td>2016</td><td>Senac</td></tr>
+            <tr><td>Operador de computador</td><td>2015</td><td>Senac</td></tr>
+            <tr><td>Algoritmos e lógica de programação</td><td>2021</td><td>Udemy</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Faculdade -->
+    <section class="card">
+      <h1>Escolaridade – Faculdade</h1>
+      <div class="table-wrap">
+        <table class="tabela">
+          
+          <thead>
+            <tr>
+              <th scope="col">Situação/Ano</th>
+              <th scope="col">Instituição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Cursando</td><td>Uninter</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
 </body>
-
 </html>

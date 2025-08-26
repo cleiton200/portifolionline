@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <style></style>
-    <title>Contato</title>
-    <link rel="stylesheet" href="styles/contato.css">
+  <meta charset="utf-8" />
+  <title>Contato</title>
+  <link rel="stylesheet" href="styles/contato.css">
 </head>
-
 <body>
-    <nav id="menu">
-        <ul>
-            <li><a href="Sobre mim.html">Sobre mim</a></li>
-            <li><a href="Formação.html">Formação</a></li>
-            <li><a href="Portifolio.html">Portifolio</a></li>
-            <li><a href="Contato.html">Contato</a></li>
-        </ul>
-    </nav>
+  <nav id="menu">
+    <ul>
+      <li><a href="Sobre mim.html">Sobre mim</a></li>
+      <li><a href="Formação.html">Formação</a></li>
+      <li><a href="Portifolio.html">Portifolio</a></li>
+      <li><a href="Contato.html">Contato</a></li>
+    </ul>
+  </nav>
 
-    <form class="formulario"> <!--aqui estão as informaçãos sobre o formulario -->
-        <label for="fname">Escreva seu nome:</label>
-        <input type="text" id="fname" name="fname" style=" width: 300px">
-        <p>
-            <label for="lname">Ultimo nome:</label>
-            <input type="text" id="lname" name="lname" style="width: 300px">
-        </p>
-        <p>
-            <label for="lname">Seu numero:</label>
-            <input type="number" id="numero" name="numero" style="width: 300px">
-        </p>
-        <p>
-            <label for="Pedeido">O que deseja:</label>
-        </p>
-        <textarea id="Pedidos" name="Pedidos" rows="10" cols="50">
-            Digite aqui o que você precisa, lembrece qauntos mais detalhes, melhor ficará.
-        </textarea>
-    </form>
+  <form class="formulario" action="#" method="post">
+    <div class="field">
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" autocomplete="name" required>
+    </div>
 
-    <p>
-    <div align='center'>
-        <input class="button" type="submit" value="Enviar Pedido"><BR>
+    <div class="field">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" autocomplete="email" required>
     </div>
-    </p>
-    <div align='center'>
-        <img src="imagens/gif.gif">
+
+    <div class="field">
+      <label for="numero">Seu número</label>
+      <input type="tel" id="numero" name="numero" inputmode="tel"
+             placeholder="(xx) xxxxx-xxxx" autocomplete="tel" required>
     </div>
+
+    <div class="field">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+    </div>
+
+    <button class="button" type="submit" aria-label="Enviar formulário de contato">
+      Enviar pedido
+    </button>
+  </form>
 </body>
-
 </html>
