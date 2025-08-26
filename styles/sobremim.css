@@ -1,70 +1,153 @@
-/* estilo do nav*/
+/* ------- NAV ------- */
 #menu ul {
-    padding: 10 px;
-    margin: 10 px;
-    background-color: #0f0101;
-    list-style: none;
-    text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: #0f0101;
+  list-style: none;
+  text-align: center;
 }
-
-#menu ul li {
-    display: inline;
-}
-
+#menu ul li { display: inline; }
 #menu ul li a {
-    padding: 2px 10px;
-    display: inline-block;
-    /* visual do link */
-    background-color: none;
-    color: #ebe2e2;
-    text-decoration: none;
-    border-bottom: 3px solid #EDEDED;
+  padding: 6px 12px;
+  display: inline-block;
+  background-color: transparent;
+  color: #ebe2e2;
+  text-decoration: none;
+  border-bottom: 3px solid #EDEDED;
 }
-
 #menu ul li a:hover {
-    background-color: #030303;
-    color: #e08b1b;
-    border-bottom: 3px solid #2369ec;
+  background-color: #030303;
+  color: #e08b1b;
+  border-bottom: 3px solid #2369ec;
 }
 
-/*estilo do fundo*/
+/* ------- BASE ------- */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
 body {
-    background-image: url('../imagens/sheilong_remester.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('../imagens/sheilong_remester.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #f5f5f5;
 }
 
-/*estilo dos textos*/
-h1 {
-    margin-inline-start: 800px;
-    color: #ebe9e6;
-    text-align: left;
-    background-color: #0f010142;
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 24px auto 64px;
+  padding: 0 16px;
 }
 
-.text {
-    margin-inline-start: 400px;
-    color: rgba(247, 247, 247);
-    text-align: left;
-    font-size: 20px;
-    background-color: #0f01016b;
+.page-title {
+  margin: 0 0 16px;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
 }
 
-.text1 {
-    margin-inline-start: left;
-    color: rgb(247, 247, 247);
-    text-align: left;
-    font-size: 20px;
-    background-color: #0f010142;
+/* ------- CARD (igual padrão das outras telas) ------- */
+.card {
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+.section-title {
+  margin: 0 0 16px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
 }
 
-th,
-td {
-    text-align: center;
-    color: rgb(247, 247, 247);
-    background-color: #0f01017c;
-    border: 1px solid rgba(236, 232, 232, 0.404);
-    border-radius: 10px;
-    font-size: 20px
+/* ------- LAYOUT DO PERFIL ------- */
+.profile {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.avatar img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 16px;
+  display: block;
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+}
+.bio h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  color: #ffffff;
+}
+.bio p {
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
+/* ------- TABELA (mesmo padrão das outras telas) ------- */
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+}
+.tabela {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 560px;
+  background: rgba(12,12,12,.75);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.tabela caption {
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: 600;
+  color: #cbd5e1;
+  background: rgba(255,255,255,.03);
+}
+.tabela thead th {
+  position: sticky;
+  top: 0;
+  background: rgba(34,211,238,.12); /* ciano translúcido */
+  color: #e2e8f0;
+  text-align: center;
+  font-weight: 700;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.tabela tbody td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  color: #e5e7eb;
+  text-align: center;
+}
+.tabela tbody tr:nth-child(odd)  { background: rgba(255,255,255,.03); }
+.tabela tbody tr:nth-child(even) { background: rgba(255,255,255,.06); }
+.tabela tbody tr:hover {
+  background: rgba(224,139,27,.15);   /* laranja no hover */
+  transition: background .15s ease;
+}
+/* Bordas arredondadas */
+.tabela thead tr:first-child th:first-child { border-top-left-radius: 12px; }
+.tabela thead tr:first-child th:last-child  { border-top-right-radius: 12px; }
+.tabela tbody tr:last-child td:first-child  { border-bottom-left-radius: 12px; }
+.tabela tbody tr:last-child td:last-child   { border-bottom-right-radius: 12px; }
+
+/* ------- RESPONSIVO ------- */
+@media (max-width: 860px) {
+  .profile { grid-template-columns: 1fr; }
+  .avatar img { max-width: 100%; margin: 0 auto 12px; }
+  .bio h2 { text-align: center; }
+}
+@media (max-width: 600px) {
+  .card { padding: 16px; }
+  .section-title, .page-title { font-size: 22px; }
+  .tabela thead th, .tabela tbody td { padding: 12px; font-size: 14px; }
 }

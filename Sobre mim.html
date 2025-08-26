@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <title>Sobre mim</title>
-    <link rel="stylesheet" href="styles/sobremim.css">
+  <meta charset="utf-8" />
+  <title>Sobre mim</title>
+  <link rel="stylesheet" href="styles/sobremim.css">
 </head>
-
 <body>
-    <nav id="menu">
-        <ul>
-            <li><a href="Sobre mim.html">Sobre mim</a></li>
-            <li><a href="Formação.html">Formação</a></li>
-            <li><a href="Portifolio.html">Portifolio</a></li>
-            <li><a href="Contato.html">Contato</a></li>
-        </ul>
-    </nav>
-    <div style="float: left;">
-        <img src="imagens/img 8.jpeg" style="width: 350px;">
-    </div>
+  <nav id="menu">
+    <ul>
+      <li><a href="Sobre mim.html">Sobre mim</a></li>
+      <li><a href="Formação.html">Formação</a></li>
+      <li><a href="Portifolio.html">Portifolio</a></li>
+      <li><a href="Contato.html">Contato</a></li>
+    </ul>
+  </nav>
 
-    <h1>Cleiton Medeiros Gomes</h1><br>
+  <main class="container">
+    <!-- Card de perfil -->
+    <section class="card">
+      <h1 class="page-title">Sobre mim</h1>
 
-    <div class="text">
-        Quem é ? <br>
-        Nascido no dia 06 de junho de 2000, em Curitiba-Parana. Hoje ainda moro em curitiba a 23 anos.
-        Quando completei 14 comecei a trabalhar com pai para aprender sobre sua profissão,
-        desde de muito cedo gosto de aprender como funciona, como se faz, coisas das quais me interesso,
-        como por exemplo a construção civil a qual meu atua desde o meu nascimento. <p></p>
+      <div class="profile">
+        <div class="avatar">
+          <img src="imagens/img 8.jpeg" alt="Foto de perfil">
+        </div>
 
-        Um pouco mais sobre mim ... <br>
-        Como visto acima começei a trabalhar com meu pai, nesse caso para comprar o meu primeiro video game, que
-        na epoca era o tão aclamado playstation 2. Após isso, terminei o colegial sem trabalhar. Após o fim do
-        ensino médio, voltei a trabalhar com meu pai, mais ao mesmo tempo estava fazendo um cursinho prepartório
-        para prestar realizar a prova da UFPR, a qual consegui a façanha de ser convocado para participar de aulas
-        probabilidade, mas nesta epoca tive que me apresentar a serviço militar obrigatório, o que não foi muito bom...
-    </div>
-    <table style="width:100%">
-        <tr>
-            <th colspan="3">Hobbies</th>
-        </tr>
-        <tr>
-            <td>Jogos </td>
-            <td>Series</td>
-        </tr>
-        <tr>
-            <td>Bom quando estou em meu tempo de lazer, <br>
-                gosto bastante de passar <br>
-                o tempo jogando jogos eletronicos<br>
-                o ultimo que joguei foi god of war ragnarok<br>
-                achei o jogo exelente
-            </td>
-            <td>Também gosto muito de ver series <br>
-                de comedia na maioria da vezes <br>
-                afinal o que melhor para esquecer os problemas do <br>
-                que uma boa risada </td>
-        </tr>
-    </table>
+        <div class="bio">
+          <h2>Cleiton Medeiros Gomes</h2>
 
+          <p><strong>Quem é?</strong><br>
+            Nascido no dia 06 de junho de 2000, em Curitiba-PR. Hoje ainda moro em Curitiba há 23 anos.
+            Quando completei 14, comecei a trabalhar com meu pai para aprender sobre sua profissão.
+            Desde cedo gosto de descobrir como as coisas funcionam, como se faz, e me aprofundo no que me interessa,
+            como, por exemplo, a construção civil, área em que meu pai atua desde o meu nascimento.
+          </p>
 
+          <p><strong>Um pouco mais sobre mim…</strong><br>
+            Comecei a trabalhar com meu pai para comprar meu primeiro videogame (o aclamado PlayStation 2 😄).
+            Depois terminei o ensino médio sem trabalhar. Após o fim do colégio, voltei a trabalhar com ele,
+            enquanto fazia um cursinho preparatório para a UFPR. Consegui ser convocado para aulas de probabilidade,
+            mas nessa época precisei me apresentar ao serviço militar obrigatório… e os planos mudaram.
+          </p>
+        </div>
+      </div>
+    </section>
 
-
+    <!-- Card de hobbies (tabela com o mesmo padrão das outras telas) -->
+    <section class="card">
+      <h2 class="section-title">Hobbies</h2>
+      <div class="table-wrap">
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th scope="col">Categoria</th>
+              <th scope="col">Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jogos</td>
+              <td>
+                No tempo livre, gosto de jogar. O último que joguei foi <em>God of War: Ragnarök</em> —
+                achei excelente!
+              </td>
+            </tr>
+            <tr>
+              <td>Séries</td>
+              <td>
+                Curto bastante séries de comédia. Nada como dar boas risadas para desligar dos problemas.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
 </body>
-
 </html>
